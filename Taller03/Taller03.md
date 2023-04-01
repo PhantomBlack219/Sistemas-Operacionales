@@ -1,7 +1,11 @@
 ### 1. En entornos compartidos, los usuarios comparten el sistema. Esto puede dar lugar a varios problemas de seguridad.
 *  Mencione dos problemas y expliquelos.
+| Los usuarios podrían tener acceso a la información confidencial de otros usuarios siendo un gran peligro debido a un posible robo de dicha información.               |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Al ser un entorno compartido cualquier tipo de vulnerabilidad o algún malware  podría generar grandes problemas a la información que maneje cada uno de los usaurios  |
 *  ¿Es posible asegurar el mismo grado de seguridad en un sistema compartido que en un
    sistema dedicado?. Explique su respuesta.
+Se podria llegar a un nivel razonable de seguridad con la implementación de medidas como controles de acceso e implementación de politicas de seguridad adecuadas, aunque realmente no considero que se pueda llegar al mismo nivel de seguridad y que una única vulnerabilidad puede perjudicar a muchos usuarios.
 ### 2. Un problema común en los OS es la utilización de recursos. Enumere los recursos que deben gestionarse en las siguientes maquina (explique porqué):
 * Sistemas embebidos
 * Mainframe
@@ -9,7 +13,13 @@
 * Server
 * Mobile
 ### 3. Caracterice dos casos de uso para implementar un OS para servidor y PC.
+| Servidores de alta carga                               | Los servidores de alta carga deben ser capaces de manejar múltiples solicitudes y tareas simultaneas, deben ser altamente escalables y seguro un ejemplo de OS en estos casos sería Linux. |
+|--------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Estaciones de trabajo para diseño gráfico o multimedia | Los OS para diseño grafico o deben ser capaces de manejar  aplicaciones con un gran gasto de recursos, manejo de ram y almacenamiento, un ejemplo de OA en estos casos sería macOS         |
 ### 4. Compare las diferencias entre multiprocesamiento simétrico y asimétrico.
+El multiprocesamiento simétrico (SMP) implica el uso de múltiples procesadores idénticos que comparten una única memoria compartida y un sistema operativo común. Todos los procesadores en un sistema SMP tienen acceso igualitario a la memoria y pueden realizar cualquier tarea en cualquier momento. Los sistemas SMP son ampliamente utilizados en servidores de alto rendimiento y supercomputadoras.
+
+Por otro lado, el multiprocesamiento asimétrico (ASMP) implica el uso de múltiples procesadores diferentes, donde cada procesador tiene una tarea específica asignada y acceso a una memoria dedicada. En un sistema ASMP, cada procesador tiene una función específica, y no comparten la misma jerarquía en términos de acceso a memoria y procesamiento. Este tipo de multiprocesamiento se utiliza a menudo en sistemas integrados y dispositivos móviles.
 ### 5. Enumere los requerimientos para que dos maquinas se junten en un cluster y provean un
 servicio de alta disponibilidad (HA).
 ### 6. Compare las diferencias entre una excepción y una interrupción.
