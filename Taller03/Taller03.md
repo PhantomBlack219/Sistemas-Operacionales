@@ -9,6 +9,8 @@
    sistema dedicado?. Explique su respuesta.<br />
    
 Se podria llegar a un nivel razonable de seguridad con la implementación de medidas como controles de acceso e implementación de politicas de seguridad adecuadas, aunque realmente no considero que se pueda llegar al mismo nivel de seguridad y que una única vulnerabilidad puede perjudicar a muchos usuarios.
+
+
 ### 2. Un problema común en los OS es la utilización de recursos. Enumere los recursos que deben gestionarse en las siguientes maquina (explique porqué):
 * **Sistemas embebidos:**
     La memoria, el espacio de almacenamiento y el ancho de banda de E/S son recursos críticos en los sistemas embebidos. El sistema operativo debe administrar de manera efectiva estos recursos, ya que los sistemas embebidos suelen tener limitaciones en términos de capacidad de procesamiento y almacenamiento.
@@ -20,14 +22,20 @@ Se podria llegar a un nivel razonable de seguridad con la implementación de med
     La memoria, la capacidad de procesamiento, el almacenamiento y la red son recursos críticos en los servidores. El sistema operativo debe ser capaz de gestionar eficazmente estos recursos y optimizar su uso para un alto nivel de rendimiento, debido al alto volumen de solicitudes que pueden recibir al mismo tiempo.
 * **Mobile:**
     La batería, la memoria, la capacidad de procesamiento, la capacidad de almacenamiento y la red son recursos críticos en los dispositivos móviles. El sistema operativo debe ser capaz de gestionar eficazmente estos recursos para prolongar la vida útil de la batería y proporcionar una experiencia de usuario sin problemas. Además, la gestión de la red también es un recurso crítico en los dispositivos móviles, ya que pueden estar sujetos a restricciones de ancho de banda y conectividad.
+    
+    
 ### 3. Caracterice dos casos de uso para implementar un OS para servidor y PC.
 | Servidores de alta carga                               | Los servidores de alta carga deben ser capaces de manejar múltiples solicitudes y tareas simultaneas, deben ser altamente escalables y seguro un ejemplo de OS en estos casos sería Linux. |
 |--------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Estaciones de trabajo para diseño gráfico o multimedia | Los OS para diseño grafico o deben ser capaces de manejar  aplicaciones con un gran gasto de recursos, manejo de ram y almacenamiento, un ejemplo de OA en estos casos sería macOS         |
+
+
 ### 4. Compare las diferencias entre multiprocesamiento simétrico y asimétrico.<br />
 El multiprocesamiento simétrico (SMP) implica el uso de múltiples procesadores idénticos que comparten una única memoria compartida y un sistema operativo común. Todos los procesadores en un sistema SMP tienen acceso igualitario a la memoria y pueden realizar cualquier tarea en cualquier momento. Los sistemas SMP son ampliamente utilizados en servidores de alto rendimiento y supercomputadoras.
 
 Por otro lado, el multiprocesamiento asimétrico (ASMP) implica el uso de múltiples procesadores diferentes, donde cada procesador tiene una tarea específica asignada y acceso a una memoria dedicada. En un sistema ASMP, cada procesador tiene una función específica, y no comparten la misma jerarquía en términos de acceso a memoria y procesamiento. Este tipo de multiprocesamiento se utiliza a menudo en sistemas integrados y dispositivos móviles.
+
+
 ### 5. Enumere los requerimientos para que dos maquinas se junten en un cluster y provean un servicio de alta disponibilidad (HA).
  1. **Conectividad de red:** Las máquinas deben estar conectadas a través de una red confiable y de alta velocidad, para poder comunicarse entre ellas y compartir recursos.
  2. **Hardware compatible:**  Las máquinas deben tener hardware compatible, incluyendo CPU, memoria, almacenamiento y otros componentes, para garantizar que puedan trabajar juntas de manera eficiente.
@@ -38,6 +46,7 @@ Por otro lado, el multiprocesamiento asimétrico (ASMP) implica el uso de múlti
  7. **Monitorización y gestión:** El clúster debe contar con herramientas de monitorización y gestión para permitir la detección y resolución de problemas de manera proactiva, así como la gestión del clúster en general.
  8. **Fuentes de alimentación y enfriamiento redundantes:** Las máquinas del clúster deben estar conectadas a fuentes de alimentación y sistemas de enfriamiento redundantes, para garantizar que puedan funcionar continuamente incluso en caso de fallas de hardware o energía.
  9. **Políticas de respaldo y recuperación ante desastres:** Es importante tener políticas y procedimientos de respaldo y recuperación ante desastres para asegurar que los datos estén protegidos y se puedan recuperar en caso de una falla importante.
+
  
 ### 6. Compare las diferencias entre una excepción y una interrupción.
 
@@ -53,13 +62,19 @@ Por otro lado, el multiprocesamiento asimétrico (ASMP) implica el uso de múlti
 
 ### 7. El DMA (acceso directo a memoria) se usa en dispositivos I/O para evitar uso innecesario de la
 CPU.
-* ¿Como interactuá la CPU con el dispositivo para coordinar la transferencia?
-* ¿Como sabe la CPU que las operaciones de memoria se han completado?
+* ¿Como interactuá la CPU con el dispositivo para coordinar la transferencia? <br />
+La CPU configura el controlador DMA para que este realice la transferencia de datos. Luego, el controlador DMA se encarga de transferir los datos desde el dispositivo de entrada/salida a la memoria sin la intervención de la CPU.
+* ¿Como sabe la CPU que las operaciones de memoria se han completado? <br />
+El controlador DMA envía una señal de interrupción a la CPU para notificarle que los datos han sido transferidos. La CPU verifica que los datos se hayan transferido correctamente y puede continuar con la siguiente tarea.
+
+
 ### 8. Identifique dos razones por las que la cache es útil. ¿Que problemas resuelve y causa?.
 |                                                                            **Razones por las que la caché es útil**                                                                               |                                                                          **Problemas que la caché puede causar**                                                                           |
 |:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | La caché permite almacenar datos en una memoria más cercana al procesador por lo que permite acceder a los datos de manera más rápida  mejorando el rendimiento de los sistemas informaticos.     | Los dispositivos pueden tener copias diferentes de los mismos datos generando problemas de consitencia, sobretodo cuando 2 dispositivos  acceden a los mismos datos.                    |
 | La caché guarda los datos que se prevé que se solicitarán con frecuencia por lo que los datos no tienen que viajar a través de la red cada vez que se solicitan, lo que reduce el trafico de red. | Al tener una capacidad limitada si se almacenan muchos datos pueden eliminarse datos importantes, e incluso si no se usan los datos de la caché esto simboliza una perdida de recursos. |
+
+
 ### 9. Explique con un ejemplo, como se manifiesta el problema de mantener la coherencia de los datos de cache en los siguientes entornos:
 * Sistema distribuido : En los sistemas distribuidos a la hora de cambiar un dato es necesario enviar un mensaje de aceptación a todos los equipos que tengan una copia del mismo dato, por lo tanto si el protocolo que envia dichos datos falla de alguna forma se puede generar un problema de coherencia con los otros equipos que no han recibido la actualización del datos
 * Sistema multiprocesador: Este caso es muy similar al anterior lo que cambia es que el manejo de la memoria se realiza de manera local, por lo tanto si el envio de mensajes falla pués puede haber un procesador que no actualice el dato y genere problemas de coherencia
