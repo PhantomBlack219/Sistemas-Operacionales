@@ -6,10 +6,6 @@
 | Acceso no autorizado a recursos | Los usuarios podrían tener acceso a la información confidencial de otros usuarios siendo un gran peligro debido a un posible robo de dicha información.  |
 | Ataques de inyección de código | Al ser un entorno compartido cualquier tipo de vulnerabilidad o algún malware  podría generar grandes problemas a la información que maneje cada uno de los usaurios, esto podria darse debido a la intalacion de origenes desconocidos. |
 
-
-| Los usuarios podrían tener acceso a la información confidencial de otros usuarios siendo un gran peligro debido a un posible robo de dicha información. |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Al ser un entorno compartido cualquier tipo de vulnerabilidad o algún malware  podría generar grandes problemas a la información que maneje cada uno de los usaurios  |
 *  ¿Es posible asegurar el mismo grado de seguridad en un sistema compartido que en un
    sistema dedicado?. Explique su respuesta.<br />
    
@@ -30,8 +26,10 @@ Se podria llegar a un nivel razonable de seguridad con la implementación de med
     
     
 ### 3. Caracterice dos casos de uso para implementar un OS para servidor y PC.
-| Servidores de alta carga                               | Los servidores de alta carga deben ser capaces de manejar múltiples solicitudes y tareas simultaneas, deben ser altamente escalables y seguro un ejemplo de OS en estos casos sería Linux. |
+
+|                          Casos                         |        Descripción         |
 |--------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Servidores de alta carga                               | Los servidores de alta carga deben ser capaces de manejar múltiples solicitudes y tareas simultaneas, deben ser altamente escalables y seguro un ejemplo de OS en estos casos sería Linux. |
 | Estaciones de trabajo para diseño gráfico o multimedia | Los OS para diseño grafico o deben ser capaces de manejar  aplicaciones con un gran gasto de recursos, manejo de ram y almacenamiento, un ejemplo de OA en estos casos sería macOS         |
 
 
