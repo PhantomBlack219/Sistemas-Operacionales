@@ -29,15 +29,15 @@ El multiprocesamiento simétrico (SMP) implica el uso de múltiples procesadores
 
 Por otro lado, el multiprocesamiento asimétrico (ASMP) implica el uso de múltiples procesadores diferentes, donde cada procesador tiene una tarea específica asignada y acceso a una memoria dedicada. En un sistema ASMP, cada procesador tiene una función específica, y no comparten la misma jerarquía en términos de acceso a memoria y procesamiento. Este tipo de multiprocesamiento se utiliza a menudo en sistemas integrados y dispositivos móviles.
 ### 5. Enumere los requerimientos para que dos maquinas se junten en un cluster y provean un servicio de alta disponibilidad (HA).
- **1. Conectividad de red:** Las máquinas deben estar conectadas a través de una red confiable y de alta velocidad, para poder comunicarse entre ellas y compartir recursos.
- **2. Hardware compatible:**  Las máquinas deben tener hardware compatible, incluyendo CPU, memoria, almacenamiento y otros componentes, para garantizar que puedan trabajar juntas de manera eficiente.
- **3. Sistema operativo homogéneo:** Las máquinas deben tener el mismo sistema operativo, versión y configuración, para que las aplicaciones se ejecuten de manera consistente en todas las máquinas.
- **4. Software de clúster:** Se requiere de un software de clúster que permita a las máquinas coordinar sus acciones y compartir recursos, así como detectar y recuperarse de fallas en tiempo real.
- **5. Almacenamiento compartido:** Las máquinas deben tener acceso a un almacenamiento compartido, como un sistema de archivos en red o un almacenamiento de área de almacenamiento (SAN), para poder compartir datos y garantizar la consistencia de los datos en todo el clúster.
- **6. Balanceo de carga:** Se debe contar con un mecanismo de balanceo de carga para distribuir el tráfico entre las máquinas del clúster, asegurando que el servicio se mantenga disponible incluso en caso de que una máquina falle o se desconecte.
- **7. Monitorización y gestión:** El clúster debe contar con herramientas de monitorización y gestión para permitir la detección y resolución de problemas de manera proactiva, así como la gestión del clúster en general.
- **8. Fuentes de alimentación y enfriamiento redundantes:** Las máquinas del clúster deben estar conectadas a fuentes de alimentación y sistemas de enfriamiento redundantes, para garantizar que puedan funcionar continuamente incluso en caso de fallas de hardware o energía.
- **9. Políticas de respaldo y recuperación ante desastres:** Es importante tener políticas y procedimientos de respaldo y recuperación ante desastres para asegurar que los datos estén protegidos y se puedan recuperar en caso de una falla importante.
+ 1. **Conectividad de red:** Las máquinas deben estar conectadas a través de una red confiable y de alta velocidad, para poder comunicarse entre ellas y compartir recursos.
+ 2. **Hardware compatible:**  Las máquinas deben tener hardware compatible, incluyendo CPU, memoria, almacenamiento y otros componentes, para garantizar que puedan trabajar juntas de manera eficiente.
+ 3. **Sistema operativo homogéneo:** Las máquinas deben tener el mismo sistema operativo, versión y configuración, para que las aplicaciones se ejecuten de manera consistente en todas las máquinas.
+ 4. **Software de clúster:** Se requiere de un software de clúster que permita a las máquinas coordinar sus acciones y compartir recursos, así como detectar y recuperarse de fallas en tiempo real.
+ 5. **Almacenamiento compartido:** Las máquinas deben tener acceso a un almacenamiento compartido, como un sistema de archivos en red o un almacenamiento de área de almacenamiento (SAN), para poder compartir datos y garantizar la consistencia de los datos en todo el clúster.
+ 6. **Balanceo de carga:** Se debe contar con un mecanismo de balanceo de carga para distribuir el tráfico entre las máquinas del clúster, asegurando que el servicio se mantenga disponible incluso en caso de que una máquina falle o se desconecte.
+ 7. **Monitorización y gestión:** El clúster debe contar con herramientas de monitorización y gestión para permitir la detección y resolución de problemas de manera proactiva, así como la gestión del clúster en general.
+ 8. **Fuentes de alimentación y enfriamiento redundantes:** Las máquinas del clúster deben estar conectadas a fuentes de alimentación y sistemas de enfriamiento redundantes, para garantizar que puedan funcionar continuamente incluso en caso de fallas de hardware o energía.
+ 9. **Políticas de respaldo y recuperación ante desastres:** Es importante tener políticas y procedimientos de respaldo y recuperación ante desastres para asegurar que los datos estén protegidos y se puedan recuperar en caso de una falla importante.
  
 ### 6. Compare las diferencias entre una excepción y una interrupción.
 
