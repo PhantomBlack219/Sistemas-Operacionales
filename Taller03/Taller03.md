@@ -9,11 +9,16 @@
    sistema dedicado?. Explique su respuesta.
 Se podria llegar a un nivel razonable de seguridad con la implementación de medidas como controles de acceso e implementación de politicas de seguridad adecuadas, aunque realmente no considero que se pueda llegar al mismo nivel de seguridad y que una única vulnerabilidad puede perjudicar a muchos usuarios.
 ### 2. Un problema común en los OS es la utilización de recursos. Enumere los recursos que deben gestionarse en las siguientes maquina (explique porqué):
-* Sistemas embebidos
-* Mainframe
-* Workstation
-* Server
-* Mobile
+* Sistemas embebidos:
+    La memoria, el espacio de almacenamiento y el ancho de banda de E/S son recursos críticos en los sistemas embebidos. El sistema operativo debe administrar de manera efectiva estos recursos, ya que los sistemas embebidos suelen tener limitaciones en términos de capacidad de procesamiento y almacenamiento.
+* Mainframe:
+    La memoria, el almacenamiento en disco y la capacidad de procesamiento son recursos críticos en los sistemas mainframe. El sistema operativo debe ser capaz de gestionar eficazmente estos recursos para mantener un alto nivel de rendimiento debido al alto volumen de procesos que se ejecutan en paralelo.
+* Workstation:
+    La memoria, el procesador y la capacidad de almacenamiento son recursos críticos en las workstations, que suelen estar diseñadas para tareas intensivas en recursos. El sistema operativo debe ser capaz de gestionar eficazmente estos recursos para garantizar un alto nivel de rendimiento.
+* Server:
+    La memoria, la capacidad de procesamiento, el almacenamiento y la red son recursos críticos en los servidores. El sistema operativo debe ser capaz de gestionar eficazmente estos recursos y optimizar su uso para un alto nivel de rendimiento, debido al alto volumen de solicitudes que pueden recibir al mismo tiempo.
+* Mobile:
+    La batería, la memoria, la capacidad de procesamiento, la capacidad de almacenamiento y la red son recursos críticos en los dispositivos móviles. El sistema operativo debe ser capaz de gestionar eficazmente estos recursos para prolongar la vida útil de la batería y proporcionar una experiencia de usuario sin problemas. Además, la gestión de la red también es un recurso crítico en los dispositivos móviles, ya que pueden estar sujetos a restricciones de ancho de banda y conectividad.
 ### 3. Caracterice dos casos de uso para implementar un OS para servidor y PC.
 | Servidores de alta carga                               | Los servidores de alta carga deben ser capaces de manejar múltiples solicitudes y tareas simultaneas, deben ser altamente escalables y seguro un ejemplo de OS en estos casos sería Linux. |
 |--------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
