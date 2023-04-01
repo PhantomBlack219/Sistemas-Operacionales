@@ -1,5 +1,7 @@
 ### 1. En entornos compartidos, los usuarios comparten el sistema. Esto puede dar lugar a varios problemas de seguridad.
 *  Mencione dos problemas y expliquelos. 
+
+
 | Los usuarios podrían tener acceso a la información confidencial de otros usuarios siendo un gran peligro debido a un posible robo de dicha información. |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Al ser un entorno compartido cualquier tipo de vulnerabilidad o algún malware  podría generar grandes problemas a la información que maneje cada uno de los usaurios  |
