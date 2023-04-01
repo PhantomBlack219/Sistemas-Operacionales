@@ -60,8 +60,7 @@ Por otro lado, el multiprocesamiento asimétrico (ASMP) implica el uso de múlti
 | Ejemplos | Ejemplos de excepciones incluyen división entre cero, acceso a memoria no permitida, desbordamiento de pila, etc. | Ejemplos de interrupciones incluyen interrupciones de teclado, interrupciones de disco, interrupciones de red, etc. |
 
 
-### 7. El DMA (acceso directo a memoria) se usa en dispositivos I/O para evitar uso innecesario de la
-CPU.
+### 7. El DMA (acceso directo a memoria) se usa en dispositivos I/O para evitar uso innecesario de la CPU.
 * ¿Como interactuá la CPU con el dispositivo para coordinar la transferencia? <br />
 La CPU configura el controlador DMA para que este realice la transferencia de datos. Luego, el controlador DMA se encarga de transferir los datos desde el dispositivo de entrada/salida a la memoria sin la intervención de la CPU.
 * ¿Como sabe la CPU que las operaciones de memoria se han completado? <br />
