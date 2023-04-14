@@ -12,9 +12,17 @@ Para esta practica, profundice lo hablado en clase. Investigue los siguientes t�
 ### 7. Compare las ventajas y desventajas de los modelos de intercomunicación.
 ### 8. Conteste las siguientes preguntas:
 * Cual es la principal ventaja de usar microkernel en el diseño del OS?
-* Como interactúan los programas de usuario y los servicios del OS en una arquitectura
-basada en microkernel?
+
+La principal ventaja de usar un microkernel en el diseño de un sistema operativo es la modularidad. En un microkernel, el kernel en sí mismo es pequeño y maneja solo las funciones más básicas del sistema, como la gestión de procesos, la gestión de memoria y la comunicación interproceso. Todos los demás servicios del sistema operativo se ejecutan como procesos de usuario fuera del kernel, lo que significa que pueden ser agregados o eliminados sin tener que modificar el núcleo en sí. Esto hace que el sistema operativo sea mucho más flexible y fácil de mantener que un kernel monolítico, evitando así la propagación directa de fallos en el sistema.
+
+* Como interactúan los programas de usuario y los servicios del OS en una arquitectura basada en microkernel?
+
+En una arquitectura basada en microkernel, los programas de usuario y los servicios del sistema operativo interactúan a través de una interfaz de comunicación que permite la comunicación interproceso. Los programas de usuario pueden solicitar servicios al sistema operativo, como la gestión de archivos o la asignación de memoria, y el sistema operativo puede enviar notificaciones a los programas de usuario cuando ocurren eventos importantes, como la llegada de una interrupción de hardware, este tipo de interacción también es conocido como "paso de mensajes", ya que, intercambian mnesajes entre si.
+
 * Cuales son las desventajas de usar la arquitectura de microkernel?
+
+Las desventajas de usar la arquitectura de microkernel incluyen la sobrecarga de la comunicación interproceso, ya que, las solicitudes de servicios del sistema operativo deben pasar a través de la interfaz de comunicación, lo que puede disminuir el rendimiento. También puede haber una mayor complejidad en el diseño y la implementación del sistema operativo, ya que los servicios del sistema operativo se ejecutan como procesos de usuario separados
+
 ### 9. Compare las ventajas y desventajas de usar VM.
 
 | Ventajas | Desventajas |
