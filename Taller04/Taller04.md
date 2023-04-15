@@ -1,15 +1,29 @@
 # Investigación
 Para esta practica, profundice lo hablado en clase. Investigue los siguientes tópicos y de su opinión:
 ### 1. Las funciones y servicios proporcionados por el OS pueden dividirse en dos categorías, descríbalas.
+
+| Usuario                                       | Sistema                                |
+|-----------------------------------------------|----------------------------------------|
+| Interacción con el sistema de archivos        | Administración de recursos             |
+| Interacción con la interfaz de usuario        | Administración de procesos             |
+| Gestión de programas y aplicaciones           | Gestión de la memoria                  |
+| Control de dispositivos de entrada y salida   | Gestión de la seguridad                |
+| Personalización y configuración del sistema  | Interacción con hardware y firmware    |
+
+Las categorias van dividas en "usuario y sistema", Los servicios del entorno del usuario son aquellos que proporcionan una interfaz al usuario para interactuar con el sistema operativo y sus recursos mientras que Los servicios del sistema operativo son aquellos que son esenciales para el funcionamiento del sistema operativo en sí mismo.
+
 ### 2. Enumere cinco servicios proporcionados por el OS diseñados para facilitar la comodidad del usuario.
+
+* Interfaz gráfica de usuario (GUI).
+* Controladores de dispositivo 
+* Gestor de ventanas.
+* Gestor de archivos.
+* Configuración personalizada (
 
 
 ### 3. Describa como se puede generar un informe estadístico de la cantidad de tiempo y recursos consumidos por un programa.
 
 Primero será necesario Utilizar herramientas de monitoreo para medir el desempeño del programa en tiempo real. Por ejemplo, herramientas de monitoreo de recursos del sistema, como top, htop, vmstat, entre otras. Luego con ella extraemos los datos más necesarios para posteriormente analizarlos por medio de gráficas ver tiempos de ejecución máximos y minimos y lo mismo con los recursos. Por último se reliza el informe onservando así el comportamiena cantidad de recursos utilizados, el tiempo de ejecución, la frecuencia de fallos, entre otros datos relevantes.
-
-
-    Generar el informe: Con los datos recopilados y analizados, se puede generar el informe estadístico. Este informe puede incluir información como la cantidad de recursos utilizados, el tiempo de ejecución, la frecuencia de fallos, entre otros datos relevantes.
 
 ### 4. Enumere y describa cinco actividades de un OS enfocadas a la administración de archivos.
 
