@@ -1,14 +1,74 @@
 # Investigación
 Para esta practica, profundice lo hablado en clase. Investigue los siguientes tópicos y de su opinión:
 ### 1. Las funciones y servicios proporcionados por el OS pueden dividirse en dos categorías, descríbalas.
+
+| Usuario                                       | Sistema                                |
+|-----------------------------------------------|----------------------------------------|
+| Interacción con el sistema de archivos        | Administración de recursos             |
+| Interacción con la interfaz de usuario        | Administración de procesos             |
+| Gestión de programas y aplicaciones           | Gestión de la memoria                  |
+| Control de dispositivos de entrada y salida   | Gestión de la seguridad                |
+| Personalización y configuración del sistema  | Interacción con hardware y firmware    |
+
+Las categorias van dividas en "usuario y sistema", Los servicios del entorno del usuario son aquellos que proporcionan una interfaz al usuario para interactuar con el sistema operativo y sus recursos mientras que Los servicios del sistema operativo son aquellos que son esenciales para el funcionamiento del sistema operativo en sí mismo.
+
 ### 2. Enumere cinco servicios proporcionados por el OS diseñados para facilitar la comodidad del usuario.
+
+* Interfaz gráfica de usuario (GUI).
+* Controladores de dispositivo 
+* Gestor de ventanas.
+* Gestor de archivos.
+* Configuración personalizada (
+
+
 ### 3. Describa como se puede generar un informe estadístico de la cantidad de tiempo y recursos consumidos por un programa.
+
+Primero será necesario Utilizar herramientas de monitoreo para medir el desempeño del programa en tiempo real. Por ejemplo, herramientas de monitoreo de recursos del sistema, como top, htop, vmstat, entre otras. Luego con ella extraemos los datos más necesarios para posteriormente analizarlos por medio de gráficas ver tiempos de ejecución máximos y minimos y lo mismo con los recursos. Por último se reliza el informe onservando así el comportamiena cantidad de recursos utilizados, el tiempo de ejecución, la frecuencia de fallos, entre otros datos relevantes.
+
 ### 4. Enumere y describa cinco actividades de un OS enfocadas a la administración de archivos.
+
+1. **Crear archivos:** El sistema operativo permite a los usuarios crear nuevos archivos en el sistema de archivos. Esto puede ser útil para crear documentos, archivos de texto, hojas de cálculo, imágenes y otros tipos de archivos.
+
+2. **Eliminar archivos:** El sistema operativo permite a los usuarios eliminar archivos del sistema de archivos. Esto puede ser útil para liberar espacio en disco o para eliminar archivos innecesarios.
+
+3. **Actualizar archivos:** El sistema operativo permite a los usuarios actualizar el contenido de los archivos existentes en el sistema de archivos. Esto puede ser útil para hacer cambios en documentos, hojas de cálculo u otros tipos de archivos.
+
+4. **Configurar permisos de archivos:** El sistema operativo permite a los usuarios establecer permisos de acceso a los archivos en el sistema de archivos. Esto puede ser útil para controlar quién puede acceder y modificar los archivos.
+
+5. **Comprimir y descomprimir archivos:** El sistema operativo puede proporcionar herramientas para comprimir y descomprimir archivos en formato ZIP, RAR u otros formatos. Esto puede ser útil para ahorrar espacio en disco o para compartir archivos grandes a través de Internet.
+
 ### 5. Compare las ventajas y desventajas de usar la misma interfaz de llamadas al sistema para la manipulación de archivos como de dispositivos.
+
+| Ventajas                                  | Desventajas                                     |
+|-------------------------------------------|------------------------------------------------|
+| Simplifica el diseño del sistema operativo| Puede limitar la flexibilidad del sistema       |
+| Reduce la complejidad de la implementación| Puede llevar a una disminución del rendimiento   |
+| Permite una interfaz consistente           | Puede limitar la capacidad de expansión del OS   |
+| Facilita el desarrollo de controladores de dispositivos| Puede complicar el mantenimiento del sistema   |
+| Reduce el tamaño del kernel                | Puede generar errores de programación          |
+|                                            | Puede aumentar la complejidad de la programación |
+
+
 ### 6. Conteste las siguientes preguntas:
 * Cual es el propósito del interprete de comandos?
+
+El propósito del intérprete de comandos (también conocido como shell) es proporcionar una interfaz de usuario para interactuar con el sistema operativo. Permite al usuario ingresar comandos en la línea de comandos y ejecutar programas, administrar archivos y directorios, configurar el sistema, entre otras tareas. el interprete no entiende el comando, sino que identifica un archivo que carga en memoria y lo ejecuta.
+
 * Por qué esta separado del kernel?
+
+porque su función es proporcionar una interfaz de usuario y no estar involucrado en la administración directa de los recursos del sistema. El kernel es responsable de la gestión de los recursos del sistema, como el procesamiento, la memoria y los dispositivos de E/S, mientras que el intérprete de comandos es responsable de la interacción entre el usuario y el sistema operativo.
+
 * Liste los requisitos para desarrollar un interprete de comandos.
+
+1. **Análisis de sintaxis:** Un intérprete de comandos debe ser capaz de analizar la sintaxis de los comandos ingresados por el usuario para determinar qué acción se debe tomar.
+2. **Interacción con el sistema operativo:** El intérprete de comandos debe ser capaz de interactuar con el sistema operativo para ejecutar comandos, acceder a archivos y directorios, y realizar otras tareas.
+3. **Manejo de errores:** El intérprete de comandos debe ser capaz de manejar errores de manera efectiva para evitar interrupciones en la ejecución de los comandos.
+4. **Seguridad:** El intérprete de comandos debe ser capaz de verificar la validez de los comandos ingresados por el usuario y proteger el sistema contra posibles amenazas.
+5. **Personalización:** El intérprete de comandos debe ser personalizable para adaptarse a las necesidades específicas del usuario.
+6. **Retroalimentación al usuario:** El intérprete de comandos debe proporcionar retroalimentación clara al usuario, incluyendo mensajes de error, mensajes de confirmación y resultados de comandos.
+7. **Capacidad para manejar variables y funciones:** El intérprete de comandos debe ser capaz de manejar variables y funciones para permitir la creación de scripts y automatización de tareas.
+8. **Portabilidad:** El intérprete de comandos debe ser compatible con múltiples sistemas operativos y arquitecturas de hardware.
+
 ### 7. Compare las ventajas y desventajas de los modelos de intercomunicación.
 
 | Modelo de comunicación | Ventajas | Desventajas |
