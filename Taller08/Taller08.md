@@ -16,7 +16,7 @@ En ciertas configuraciones, la utilización de los dispositivos I/O y la utiliza
 
 ### 5.	Considere el siguiente conjunto de procesos, todos llegan al mismo tiempo en el orden del subíndice:
 
-![figura 1](https://github.com/gysselis40/Sistemas-Operacionales/blob/main/Taller%208/tablas/punto%205.png)
+![figura 1](https://github.com/PhantomBlack219/Sistemas-Operacionales/blob/main/Taller08/imagenes/5.png)
 
 Dibuje el diagrama de Gantt para FCFS, SJF, por prioridades (# de prioridad baja = a alta prioridad) y RR (cuanto = 1).
 
@@ -32,7 +32,7 @@ Dibuje el diagrama de Gantt para FCFS, SJF, por prioridades (# de prioridad baja
 ### 6.	¿Cuál es el tiempo de ejecución de cada proceso para cada algoritmo?
 El tiempo de ejecución para cada proceso en cada algoritmo es equivalente a su tiempo de ráfaga, que es el tiempo necesario para que el proceso termine.
 
-![figura 2](https://github.com/gysselis40/Sistemas-Operacionales/blob/main/Taller%208/tablas/punto%206.png)
+![figura 2](https://github.com/PhantomBlack219/Sistemas-Operacionales/blob/main/Taller08/imagenes/6.png)
 
 ### 7.	¿Cuál es el tiempo de espera de cada proceso para cada algoritmo?
 
