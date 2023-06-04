@@ -132,7 +132,7 @@ El OS no debería permitir el acceso a otras zonas de memoria si no hay ninguna 
 | Segmento | Base | Longitud | Segmento | Base | Longitud |
 |----------|------|----------|----------|------|----------|
 |    0     |   219|   600    |     3    |  1327|   580    |
-|      1   |  2300|   14     |   4|     |1952  |  96      |
+|      1   |  2300|   14     |    4     |1952  |  96      |
 |     2    |   90 |   100    |          |      |          |
 
 ¿Cuales son las direcciones físicas para las siguientes direcciones lógicas?
@@ -147,4 +147,4 @@ El OS no debería permitir el acceso a otras zonas de memoria si no hay ninguna 
 * 1.10 = 2300 + 10 = 2310
 * 2.500 = 90 + 500 = 590
 * 3.400 = 1327 + 400 = 1727
-* 4.112 = 41952 + 112 = 42064
+* 4.112 = 1952 + 112 = 2064
