@@ -129,10 +129,11 @@ El OS no debería permitir el acceso a otras zonas de memoria si no hay ninguna 
 
 
 ### 9. Considere la siguiente tabla de segmento:
-|Segmento|Base|Longitud|Segmento|Base|Longitud|
-|0|219|600|3|1327|580|
-|1|2300|14|41952|96|
-2|90|100| | | |"
+| Segmento | Base | Longitud | Segmento | Base | Longitud |
+|----------|------|----------|----------|------|----------|
+|    0     |   219|   600    |     3    |  1327|   580    |
+|      1   |  2300|   14     |   4|     |1952  |  96      |
+|     2    |   90 |   100    |          |      |          |
 
 ¿Cuales son las direcciones físicas para las siguientes direcciones lógicas?
 
