@@ -61,6 +61,6 @@ Se puede observar que en cada una de las pruebas realizadas con el estresor en l
 Se puede observar que en cada una de las pruebas realizadas con el estresor en la memoria su rendimiento se mantiene constante en cierto modo por lo que se puede analizar que el sistema tiene una buena gestión de la memoria o que el estresor no genera una presión excesiva sobre la memoria que el sistema no pueda manejar.
 
 ### Hilos
-![figura 3]((https://github.com/PhantomBlack219/Sistemas-Operacionales/blob/main/Taller13/Imagenes/Hilospng.png))
+![figura 3](https://github.com/PhantomBlack219/Sistemas-Operacionales/blob/main/Taller13/Imagenes/Hilospng.png)
 
 Por ultimo para los hilos se puede observar lo mismo que en la memoria, su rendimiento se mantiene relativamente constande por lo que el sistema tiene una buena gestion de hilos o que el estresor no gneera una presión excesiva sobre los mismos.
