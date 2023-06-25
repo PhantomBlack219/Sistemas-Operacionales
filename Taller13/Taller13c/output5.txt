@@ -1,0 +1,8 @@
+ 17:19:07 up  1:35,  2 users,  load average: 4,33, 3,40, 2,05
+stress-ng: info:  [60664] setting to a 60 second run per stressor
+stress-ng: info:  [60664] dispatching hogs: 4 malloc
+stress-ng: info:  [60664] stressor       bogo ops real time  usr time  sys time   bogo ops/s     bogo ops/s
+stress-ng: info:  [60664]                           (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [60664] malloc         10067286     60.12     27.14     92.02    167445.17       84484.22
+stress-ng: info:  [60664] successful run completed in 60.13s (1 min, 0.13 secs)
+ 17:20:08 up  1:36,  2 users,  load average: 4,56, 3,66, 2,22

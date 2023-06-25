@@ -1,0 +1,14 @@
+ 17:32:46 up  1:49,  2 users,  load average: 10,64, 5,18, 2,77
+stress-ng: info:  [224896] setting to a 60 second run per stressor
+stress-ng: info:  [224896] dispatching hogs: 4 pthread
+stress-ng: info:  [224900] pthread: maximum of 1024 concurrent pthreads created
+stress-ng: info:  [224898] pthread: maximum of 1024 concurrent pthreads created
+stress-ng: info:  [224901] pthread: maximum of 1024 concurrent pthreads created
+stress-ng: info:  [224899] pthread: maximum of 1024 concurrent pthreads created
+stress-ng: info:  [224896] stressor       bogo ops real time  usr time  sys time   bogo ops/s     bogo ops/s
+stress-ng: info:  [224896]                           (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: info:  [224896] pthread          909110     60.07     19.33     86.05     15135.42        8626.70
+stress-ng: info:  [224896] miscellaneous metrics:
+stress-ng: info:  [224896] pthread          1828462.44 nanosecs to start a pthread (geometic mean)
+stress-ng: info:  [224896] successful run completed in 60.09s (1 min, 0.09 secs)
+ 17:33:46 up  1:50,  2 users,  load average: 471,92, 149,10, 52,94
